@@ -3,17 +3,17 @@
 #ifndef FSTTABLE_H
 #define FSTTABLE_H
 
-#include <c++/9/algorithm>
-#include <c++/9/memory>
-#include <c++/9/stdexcept>
-#include <c++/9/string>
-#include <c++/9/vector>
+#include <algorithm>
+#include <memory>
+#include <stdexcept>
+#include <string>
+#include <vector>
 
 #include <fstdefines.h>
 #include <ifsttable.h>
 
 #include <byteblock_v13.h>
-#include <c++/9/cstring>
+#include <cstring>
 #include "fstdefines.h"
 #include "istringwriter.h"
 

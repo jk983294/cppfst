@@ -18,8 +18,8 @@
 #ifndef CHARACTER_V6_H
 #define CHARACTER_V6_H
 
-#include <c++/9/fstream>
-#include <c++/9/iostream>
+#include <fstream>
+#include <iostream>
 
 #include "ifstcolumn.h"
 #include "istringwriter.h"

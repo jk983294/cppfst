@@ -19,8 +19,8 @@
 #define DOUBLE_v9_H
 
 // System libraries
-#include <c++/9/istream>
-#include <c++/9/ostream>
+#include <istream>
+#include <ostream>
 
 void fdsWriteRealVec_v9(std::ofstream &myfile, double *doubleVector, unsigned long long nrOfRows,
                         unsigned int compression, std::string annotation, bool hasAnnotation);

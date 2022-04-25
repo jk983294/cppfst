@@ -18,7 +18,7 @@
 #ifndef IFST_COLUMN_H
 #define IFST_COLUMN_H
 
-#include <c++/9/string>
+#include <string>
 
 #include <istringwriter.h>
 

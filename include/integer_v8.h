@@ -18,8 +18,8 @@
 #ifndef INTEGER_V8_H
 #define INTEGER_V8_H
 
-#include <c++/9/istream>
-#include <c++/9/ostream>
+#include <istream>
+#include <ostream>
 
 void fdsWriteIntVec_v8(std::ofstream &myfile, int *integerVector, unsigned long long nrOfRows, unsigned int compression,
                        std::string annotation, bool hasAnnotation);

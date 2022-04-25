@@ -18,8 +18,8 @@
 #ifndef FST_STORE_H
 #define FST_STORE_H
 
-#include <c++/9/memory>
-#include <c++/9/vector>
+#include <memory>
+#include <vector>
 
 #include <icolumnfactory.h>
 #include <ifsttable.h>

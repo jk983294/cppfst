@@ -19,7 +19,7 @@
 #define INT64_V11_H
 
 // System libraries
-#include <c++/9/ostream>
+#include <ostream>
 
 void fdsWriteInt64Vec_v11(std::ofstream& myfile, long long* int64Vector, unsigned long long nrOfRows,
                           unsigned int compression, std::string annotation, bool hasAnnotation);

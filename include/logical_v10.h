@@ -18,8 +18,8 @@
 #ifndef LOGICAL_v10_H
 #define LOGICAL_v10_H
 
-#include <c++/9/istream>
-#include <c++/9/ostream>
+#include <istream>
+#include <ostream>
 
 // Logical vectors are always compressed to fill all available bits (factor 16 compression).
 // On top of that, we can compress the resulting bytes with a custom compressor.

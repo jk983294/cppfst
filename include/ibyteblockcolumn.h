@@ -18,7 +18,7 @@
 #ifndef IBYTEBLOCKCOLUMN_H
 #define IBYTEBLOCKCOLUMN_H
 
-#include <c++/9/memory>
+#include <memory>
 
 #include "ifstcolumn.h"
 

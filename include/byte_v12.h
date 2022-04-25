@@ -18,7 +18,7 @@
 #ifndef BYTE_V12_H
 #define BYTE_V12_H
 
-#include <c++/9/fstream>
+#include <fstream>
 
 void fdsWriteByteVec_v12(std::ofstream& myfile, char* byteVector, unsigned long long nrOfRows, unsigned int compression,
                          std::string annotation, bool hasAnnotation);
