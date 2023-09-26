@@ -81,6 +81,10 @@ public:
         data = vec.data();
         m_borrow = true;
     }
+    IntVector(int* vec) {
+        data = vec;
+        m_borrow = true;
+    }
 
     ~IntVector() { if (not m_borrow) delete[] data; }
 
@@ -110,7 +114,7 @@ public:
 };
 
 class DoubleVector : public DestructableObject {
-    double* data;
+    double* data{nullptr};
     bool m_borrow{false};
 
 public:
@@ -118,6 +122,11 @@ public:
 
     DoubleVector(std::vector<double>& vec) {
         this->data = vec.data();
+        m_borrow = true;
+    }
+
+    DoubleVector(double* vec) {
+        this->data = vec;
         m_borrow = true;
     }
 
@@ -192,6 +201,11 @@ public:
     }
 
     IntVectorAdapter(std::vector<int>& vec) {
+        shared_data = std::make_shared<IntVector>(vec);
+        this->columnAttribute = FstColumnAttribute::INT_32_BASE;
+    }
+
+    IntVectorAdapter(int* vec) {
         shared_data = std::make_shared<IntVector>(vec);
         this->columnAttribute = FstColumnAttribute::INT_32_BASE;
     }
@@ -292,6 +306,9 @@ public:
     }
 
     DoubleVectorAdapter(std::vector<double>& vec) {
+        shared_data = std::make_shared<DoubleVector>(vec);
+    }
+    DoubleVectorAdapter(double* vec) {
         shared_data = std::make_shared<DoubleVector>(vec);
     }
 
